@@ -25,3 +25,25 @@ html{
     margin: 0 auto;
     
 }
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    /*Para bajar el zoom de la imagen*/
+    background-size: cover;
+    /*Para tener la imagen centrada*/
+    background-position: center;
+    /*100% del viewport*/
+    height: 100vh;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    margin: 0;
+}
