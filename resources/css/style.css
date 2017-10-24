@@ -1,0 +1,19 @@
+/*Todos los margin ad padding se han ido
+  Con box-sizing: border-box se busca definir el ancho y el alto de la caja por completo no solo del contenido*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Configuracion basica de html*/
+html{
+    background-color: #fff;
+    color: #555;
+    /*Si LATO no se puede desplegar se muestra el texto en Arial*/
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    /*renderiza de una manera perfecta*/
+    text-rendering:optimizeLegibility;
+}
