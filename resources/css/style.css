@@ -17,3 +17,11 @@ html{
     /*renderiza de una manera perfecta*/
     text-rendering:optimizeLegibility;
 }
+
+/*Nuestro contenido estara en FILAS*/
+.row{
+    max-width: 1140px;
+    /*La fila esta centrada*/
+    margin: 0 auto;
+    
+}
