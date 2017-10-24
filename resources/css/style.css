@@ -1,3 +1,8 @@
+/*COLOR=e67e22*/
+
+/*-------------------------------------------------------------------------------*/
+/*BASIC SETUP*/
+/*-------------------------------------------------------------------------------*/
 /*Todos los margin ad padding se han ido
   Con box-sizing: border-box se busca definir el ancho y el alto de la caja por completo no solo del contenido*/
 *{
@@ -18,6 +23,9 @@ html{
     text-rendering:optimizeLegibility;
 }
 
+/*-------------------------------------------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*-------------------------------------------------------------------------------*/
 /*Nuestro contenido estara en FILAS*/
 .row{
     max-width: 1140px;
@@ -26,24 +34,7 @@ html{
     
 }
 
-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-    /*Para bajar el zoom de la imagen*/
-    background-size: cover;
-    /*Para tener la imagen centrada*/
-    background-position: center;
-    /*100% del viewport*/
-    height: 100vh;
-}
-
-.hero-text-box{
-    position:absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
+/*------------HEADINGS------------*/
 h1{
     margin-top: 0;
     margin-bottom: 20px;
@@ -55,6 +46,7 @@ h1{
     word-spacing: 4px;
 }
 
+/*------------BUTTONS------------*/
 /*botones en general
 Link==> significa como se muestra el elemento A en su estado normal
 Visited ==> significa como se muestra el elemento A despues de ser visitado
@@ -102,4 +94,61 @@ Especificamos el estilo del boton (que tengan un tono anaranjado oscuro) cuando:
 .btn-ghost:hover{
     border: 1px solid #cf6d17;
     color:#fff;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*HEADER*/
+/*-------------------------------------------------------------------------------*/
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    /*Para bajar el zoom de la imagen*/
+    background-size: cover;
+    /*Para tener la imagen centrada*/
+    background-position: center;
+    /*100% del viewport*/
+    height: 100vh;
+}
+
+.hero-text-box{
+    position:absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+/*Selecciona todos los elementos LI de la navegacion*/
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    padding: 8px 0;
+    border-bottom: 2px solid #e67e22;
 }
