@@ -284,9 +284,10 @@ header{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.98);  
     box-shadow:  0  2px 2px #efefef;
+    z-index: 9999;
 }
 
-.main-nav{margin-top: 18px;}
+.sticky .main-nav{margin-top: 18px;}
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited{
@@ -638,4 +639,27 @@ footer p{
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*ANIMATIONS*/
+/*-------------------------------------------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animated{
+    opacity: 1;
 }
